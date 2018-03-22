@@ -1,0 +1,6 @@
+framework module Pods_DynamicTypeSnapshotTests {
+  umbrella header "Pods-DynamicTypeSnapshotTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

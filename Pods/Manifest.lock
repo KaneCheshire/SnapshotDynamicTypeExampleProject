@@ -1,0 +1,21 @@
+PODS:
+  - AEXML (4.2.2)
+  - PathKit (0.9.0)
+  - PixelTest (0.7.0):
+    - xcproj
+  - xcproj (4.2.0):
+    - AEXML (~> 4.1)
+    - PathKit (~> 0.8)
+
+DEPENDENCIES:
+  - PixelTest (= 0.7.0)
+
+SPEC CHECKSUMS:
+  AEXML: 5ebafc1b75e0bcf0f1b09b8ca8fed2d5a199479b
+  PathKit: bc177736eb737341ddee2c24413d81ef1abc9ba4
+  PixelTest: 3f2a947644cd54f45acb2a7b1273f1a03deaf229
+  xcproj: bf5339a8c8b295e3364a16074d842b3ea71a4f5b
+
+PODFILE CHECKSUM: 9c8b4358ec4eb3c5e72fa3e01685e2b3323b9826
+
+COCOAPODS: 1.4.0
