@@ -25,7 +25,6 @@ final class ExampleView: UIView {
 	override func awakeFromNib() {
 		super.awakeFromNib()
 		setupDynamicType()
-		updateFonts()
 	}
 	
 	func configure(with viewModel: ExampleViewModel, traitCollection: UITraitCollection = UIScreen.main.traitCollection) {
@@ -42,7 +41,7 @@ final class ExampleView: UIView {
 		messageLabel.adjustsFontForContentSizeCategory = true
 	}
 	
-	private func updateFonts(with traitCollection: UITraitCollection = UIScreen.main.traitCollection) {
+	private func updateFonts(with traitCollection: UITraitCollection) {
 		titleLabel.font = UIFontMetrics.default.scaledFont(for: .systemFont(ofSize: 20, weight: .heavy), compatibleWith: traitCollection)
 		detailLabel.font = UIFontMetrics.default.scaledFont(for: .systemFont(ofSize: 20, weight: .regular), compatibleWith: traitCollection)
 		messageLabel.font = UIFontMetrics.default.scaledFont(for: .systemFont(ofSize: 17, weight: .regular), compatibleWith: traitCollection)
