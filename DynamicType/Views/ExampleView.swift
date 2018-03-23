@@ -44,7 +44,7 @@ final class ExampleView: UIView {
 	
 	private func updateFonts(with traitCollection: UITraitCollection = UIScreen.main.traitCollection) {
 		titleLabel.font = UIFontMetrics.default.scaledFont(for: .systemFont(ofSize: 20, weight: .heavy), compatibleWith: traitCollection)
-		detailLabel.font = UIFontMetrics.default.scaledFont(for: .systemFont(ofSize: 20, weight: .bold), compatibleWith: traitCollection)
+		detailLabel.font = UIFontMetrics.default.scaledFont(for: .systemFont(ofSize: 20, weight: .regular), compatibleWith: traitCollection)
 		messageLabel.font = UIFontMetrics.default.scaledFont(for: .systemFont(ofSize: 17, weight: .regular), compatibleWith: traitCollection)
 	}
 	

@@ -18,7 +18,7 @@ class DynamicTypeSnapshotTests: PixelTestCase {
 	
 	func test_simpleData() throws {
 		let view = ExampleView.loadFromNib() // This is a helper function you can find in the main target
-		let viewModel = ExampleViewModel(title: "Hello World", detail: "Foo", message: "Bar")
+		let viewModel = ExampleViewModel(title: "A short title", detail: "A subtitle", message: "This is the message!")
 		view.configure(with: viewModel)
 		try verify(view, layoutStyle: .dynamicHeight(fixedWidth: 320))
 	}
@@ -32,7 +32,7 @@ class DynamicTypeSnapshotTests: PixelTestCase {
 	
 	func test_extraSmallDynamicType() throws {
 		let view = ExampleView.loadFromNib()
-		let viewModel = ExampleViewModel(title: "Hello World", detail: "Foo", message: "Bar")
+		let viewModel = ExampleViewModel(title: "A short title", detail: "A subtitle", message: "This is the message!")
 		let traitCollection = UITraitCollection(preferredContentSizeCategory: .extraSmall)
 		view.configure(with: viewModel, traitCollection: traitCollection)
 		try verify(view, layoutStyle: .dynamicHeight(fixedWidth: 320))
@@ -40,7 +40,7 @@ class DynamicTypeSnapshotTests: PixelTestCase {
 	
 	func test_accessibilityExtraExtraExtraLargeDynamicType() throws {
 		let view = ExampleView.loadFromNib()
-		let viewModel = ExampleViewModel(title: "Hello World", detail: "Foo", message: "Bar")
+		let viewModel = ExampleViewModel(title: "A short title", detail: "A subtitle", message: "This is the message!")
 		let traitCollection = UITraitCollection(preferredContentSizeCategory: .accessibilityExtraExtraExtraLarge)
 		view.configure(with: viewModel, traitCollection: traitCollection)
 		try verify(view, layoutStyle: .dynamicHeight(fixedWidth: 320))
